@@ -21,5 +21,7 @@ module.exports = {
             type: 'asset/resource',
           }
       ]
-  }
+  },
+  devtool: 'inline-source-map',
+
 };
