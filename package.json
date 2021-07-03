@@ -1,0 +1,26 @@
+{
+  "name": "tiemmaygiacmo",
+  "version": "1.0.0",
+  "description": "package for picking color websites",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trungne/tiemmaygiacmo.git"
+  },
+  "author": "Trung N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trungne/tiemmaygiacmo/issues"
+  },
+  "homepage": "https://github.com/trungne/tiemmaygiacmo#readme",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
