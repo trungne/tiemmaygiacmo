@@ -29,14 +29,14 @@ img {
 
 header {
     background-color: rgb(255, 255, 255);
-    height: 30vh; 
+    height: 25vh; 
     display: flex; 
     justify-content: center;
 }
 
 .header > img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .main-component {
@@ -53,12 +53,12 @@ header {
 
 .main-component-text {
     font-family: "Lovepen";
-    font-size: 200%;
+    font-size: 20vh;
 }
 
 .main-component:hover{
     transition-timing-function: ease-in-out;
-    font-size: 300%;
+    font-size: 22vh;
 }
 
 
