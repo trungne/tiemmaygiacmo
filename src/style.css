@@ -26,7 +26,8 @@ img {
 
 header {
     background-color: rgb(255, 255, 255);
-    height: 25%; 
+    height: 25vh; 
+    width: auto;
     display: flex; 
     justify-content: center;
 }
@@ -38,8 +39,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-family: "Fetridge";
-    font-size: 12em;
+    font-size: 10vw;
+
     transition: font-size 300ms;
     
 }
@@ -47,7 +50,7 @@ header {
 
 .main-component:hover{
     transition-timing-function: ease-in-out;
-    font-size: 13em;
+    font-size: 12vw;
 }
 
 
