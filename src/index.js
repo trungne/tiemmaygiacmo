@@ -83,7 +83,6 @@ function mainComponents(){
     aboutUsImgDiv.appendChild(aboutUsImg);
     aboutUsDiv.appendChild(aboutUsImgDiv);
 
-
     // add 2 main components to main div
     main.appendChild(designDiv);
     main.appendChild(aboutUsDiv);
