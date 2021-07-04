@@ -19,7 +19,6 @@ html {
 main {
     height: 100%;
     width: auto;
-    
     display: flex;     
 }
 
@@ -30,10 +29,9 @@ img {
 
 header {
     background-color: rgb(255, 255, 255);
-    height: 200px; 
+    height: 30vh; 
     display: flex; 
     justify-content: center;
-    margin-bottom: 5px;
 }
 
 .header > img {
@@ -49,16 +47,18 @@ header {
     justify-content: center;
     align-items: center;
 
-    font-family: "Lovepen";
-    font-size: 150px;
-
     transition: font-size 300ms;
     
 }
 
+.main-component-text {
+    font-family: "Lovepen";
+    font-size: 200%;
+}
+
 .main-component:hover{
     transition-timing-function: ease-in-out;
-    font-size: 165px;
+    font-size: 300%;
 }
 
 

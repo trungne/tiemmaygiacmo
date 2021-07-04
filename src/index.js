@@ -35,7 +35,7 @@ function mainComponents(){
     const main = document.createElement('main');
 
     
-
+    // create design component which contain text and img
     const designDiv = document.createElement('div');
     designDiv.id = "design";
     designDiv.classList.add("main-component");
@@ -52,12 +52,16 @@ function mainComponents(){
     designImgDiv.appendChild(designImg);
     designDiv.appendChild(designImgDiv);
 
+    // create about-us component which contain text and img
     const aboutUsDiv = document.createElement('div');
     aboutUsDiv.id = "about-us";
     aboutUsDiv.classList.add("main-component");
+
+    // add about-us text
     const aboutUsText = ["Về", "Tụi", "Mình"];
     aboutUsDiv.appendChild(createMultipleTextDiv(aboutUsText, "main-component-text", "about-us-text"));
 
+    // add about-us img
     const aboutUsImgDiv = document.createElement('div');
     aboutUsImgDiv.id = "about-us-img"
     const aboutUsImg = new Image();
@@ -65,6 +69,8 @@ function mainComponents(){
     aboutUsImgDiv.appendChild(aboutUsImg);
     aboutUsDiv.appendChild(aboutUsImgDiv);
 
+
+    // add 2 main components to main div
     main.appendChild(designDiv);
     main.appendChild(aboutUsDiv);
 
