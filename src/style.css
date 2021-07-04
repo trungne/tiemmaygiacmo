@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: 'fetridge';
+    font-family: 'Fetridge';
     src: url('./Fetridge.otf') format('woff2');
     font-weight: 600;
     font-style: normal;
@@ -52,7 +52,7 @@ header {
 }
 
 .main-component-text {
-    font-family: "Lovepen";
+    font-family: "Fetridge";
     font-size: 20vh;
 }
 
