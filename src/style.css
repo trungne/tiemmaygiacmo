@@ -1,65 +1,90 @@
 @font-face {
     font-family: 'Lovepen';
-    src: url("Lovepen_regular.otf") format('woff2');
-    font-weight: 500;
-    font-style: normal;
+    src: url("Lovepen_regular.otf") format('woff');
+    font-weight: 200;
+    /* font-style: normal; */
 }
-/* 
+
 @font-face {
     font-family: 'fetridge';
-    src: url('./Fetridge.otf') format('otf');
+    src: url('./Fetridge.otf') format('woff2');
     font-weight: 600;
     font-style: normal;
-} */
-body {
 }
+html {
+    height: 100%;
+    width: auto;
+}
+
 main {
-    width: 100%;
-    height: 80vh;
+    height: 100%;
+    width: auto;
+    
     display: flex;     
 }
 
 img {
     max-width: 100%; 
     max-height: 100%;
-
 }
 
 header {
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(255, 255, 255);
     height: 200px; 
     display: flex; 
     justify-content: center;
-
+    margin-bottom: 5px;
 }
 
-.main-component{
+.header > img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.main-component {
     width: 50%;
     height: auto;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-family: "Lovepen";
     font-size: 150px;
+
+    transition: font-size 300ms;
+    
 }
 
-.text {
+.main-component:hover{
+    transition-timing-function: ease-in-out;
+    font-size: 165px;
+}
+
+
+div.main-component {
     display: flex;
     flex-direction: column;
     text-shadow: 5px 5px 1px black;
     color: white;
 }
 
-
-
-#design {
-    background: url('./1.jpg');
-    background-size: auto;
+#design-text {
+    position: absolute;
+    left: 25%;
 }
 
+#design-text > div{
+    position: relative; 
+    left: -25%;
+}
 
+#about-us-text{
+    position: absolute;
+    right: 25%;
+}
 
-#about-us{
-    background: url('./2.jpg');
+#about-us-text > div{
+    position: relative; 
+    right: -25%;
 }
