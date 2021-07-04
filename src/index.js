@@ -2,17 +2,6 @@ import './style.css';
 import logoHeader from './header.png';
 import designImgUrl from "./1.jpg";
 import aboutusImgUrl from "./2.jpg";
-
-function headerComponents() {
-    const header = document.createElement('header');
-    header.classList.add('header');
-    const logo = new Image();
-    logo.src = logoHeader;
-    
-    header.appendChild(logo);
-
-    return header;
-}
 function createMultipleTextDiv(TextArray, cls, id){
     const textDiv = document.createElement('div');
     for (let i = 0; i < TextArray.length; i++){
@@ -29,20 +18,46 @@ function createMultipleTextDiv(TextArray, cls, id){
     }
 
     return textDiv;
-    
 }
+function createTextDiv(text, cls, id){
+    const textDiv = document.createElement('div');
+    const wrappedDiv = document.createElement('div');
+    wrappedDiv.textContent = text;
+    textDiv.appendChild(wrappedDiv);
+    if (cls){
+        textDiv.classList.add(cls);
+    }
+
+    if (id){
+        textDiv.id = id;
+    }
+
+
+    return textDiv;
+}
+
+function headerComponents() {
+    const header = document.createElement('div');
+    header.classList.add('header');
+    const logo = new Image();
+    logo.src = logoHeader;
+    
+    header.appendChild(logo);
+
+    return header;
+}
+
+
 function mainComponents(){
     const main = document.createElement('main');
 
-    
     // create design component which contain text and img
     const designDiv = document.createElement('div');
     designDiv.id = "design";
     designDiv.classList.add("main-component");
 
     // add design text
-    const designText = ["Thiết", "Kế", "Giấc", "Mơ"];
-    designDiv.appendChild(createMultipleTextDiv(designText, "main-component-text","design-text"));
+    designDiv.appendChild(createTextDiv("Thiết Kế Giấc Mơ", "main-component-text","design-text"));
 
     // add design img
     const designImgDiv = document.createElement('div');
@@ -58,8 +73,7 @@ function mainComponents(){
     aboutUsDiv.classList.add("main-component");
 
     // add about-us text
-    const aboutUsText = ["Về", "Tụi", "Mình"];
-    aboutUsDiv.appendChild(createMultipleTextDiv(aboutUsText, "main-component-text", "about-us-text"));
+    aboutUsDiv.appendChild(createTextDiv("Về Tụi Mình", "main-component-text", "about-us-text"));
 
     // add about-us img
     const aboutUsImgDiv = document.createElement('div');

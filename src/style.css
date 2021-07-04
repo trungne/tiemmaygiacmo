@@ -14,12 +14,14 @@
 
 body {
     margin: 0;
+    height: 100%;
+    width: auto;
 }
 
 main {
-    height: 75%;
-    width: auto;
     display: flex;     
+    justify-content: center;
+    align-items: center;
 }
 
 img {
@@ -27,10 +29,9 @@ img {
     max-height: 100%;
 }
 
-header {
+.header {
     background-color: rgb(255, 255, 255);
-    height: 25vh; 
-    width: auto;
+    height: 250px; 
     display: flex; 
     justify-content: center;
 }
@@ -38,24 +39,25 @@ header {
 .main-component {
     width: 50%;
     height: auto;
+    object-fit:fill;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+
     font-family: "Fetridge";
-    font-size: 10vw;
+    font-size: 50px;
+    letter-spacing: 0.3em;
 
     transition: font-size 300ms;
     
 }
 
-
 .main-component:hover{
     transition-timing-function: ease-in-out;
-    font-size: 12vw;
+    font-size: 60px;
 }
-
 
 div.main-component {
     display: flex;
@@ -71,7 +73,7 @@ div.main-component {
 
 #design-text > div{
     position: relative; 
-    left: -25%;
+    left: -50%;
 }
 
 #about-us-text{
@@ -81,5 +83,5 @@ div.main-component {
 
 #about-us-text > div{
     position: relative; 
-    right: -25%;
+    right: -50%;
 }
