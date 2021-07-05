@@ -1,5 +1,5 @@
 import './style.css';
-import logoHeader from './header.png';
+import logoHeader from './header_white_shadow.png';
 import designImgUrl from "./1.jpg";
 import aboutusImgUrl from "./2.jpg";
 function createMultipleTextDiv(TextArray, cls, id){

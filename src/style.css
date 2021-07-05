@@ -26,14 +26,15 @@ body {
 }
 
 .header {
-    background-color: rgb(255, 255, 255);
     width: 100vw;
     height: 25vh;
     display: flex;
     justify-content: center;
     margin: 0;
-    background-color: rgb(138, 160, 138);
+    background-image: url(./cover.jpg);
+    
 }
+
 
 main {
     width: 100vw;
