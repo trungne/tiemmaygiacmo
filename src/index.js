@@ -57,7 +57,7 @@ function mainComponents(){
     designDiv.classList.add("main-component");
 
     // add design text
-    designDiv.appendChild(createTextDiv("Thiết Kế Giấc Mơ", "main-component-text","design-text"));
+    designDiv.appendChild(createMultipleTextDiv(["Thiết Kế","Giấc Mơ"], "main-component-text","design-text"));
 
     // add design img
     const designImgDiv = document.createElement('div');
