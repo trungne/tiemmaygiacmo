@@ -38,17 +38,17 @@ body {
 main {
     width: 100vw;
     height: 75vh;
+    max-height: 75vh;
     object-fit: cover;
     display: flex;     
     
-    object-fit: fill;
 }
 
 .main-component {
     width: 50%;
 
     overflow: hidden;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,6 +79,11 @@ div.main-component {
     flex-direction: column;
     text-shadow: 5px 5px 1px black;
     color: white;
+}
+div > img{
+    object-fit: cover;
+    height: 100%;
+    background-color: gray;
 }
 
 #design-text {
